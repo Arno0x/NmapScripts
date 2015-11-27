@@ -49,8 +49,6 @@ action = function(host, port)
 		if ( response.status == 200 ) then
 			local title = string.match(response.body, CISCO_MODELS_PATTERN[model])
 			return title
-		else
-			break
 		end
 	end
 end
